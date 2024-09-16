@@ -1,3 +1,3 @@
-chcp 65001
-python F:\學校\大學\大二上\jap.py
-pause
+cd F:\GitHub\LearnJapApp
+call .venv\Scripts\activate
+call .venv\Scripts\python.exe jap.py
