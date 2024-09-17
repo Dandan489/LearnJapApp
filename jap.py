@@ -38,7 +38,9 @@ elif(type == 2):
         tts = gTTS(text=vocabs[ind], lang='ja')
         tts.save("output.mp3")
         audio_file = os.path.dirname(__file__) + '\\output.mp3'
+        time.sleep(0.1)
         playsound(audio_file)
+        os.remove(audio_file)
         next = input()
         print(vocabs[ind])
         if(next == "exit"):
